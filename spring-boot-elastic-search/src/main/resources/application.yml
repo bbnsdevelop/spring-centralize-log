@@ -15,3 +15,6 @@ spring:
       path: /h2-console
       settings.trace: false
       settings.web-allow-others: false
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
