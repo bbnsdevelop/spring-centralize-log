@@ -36,6 +36,7 @@ Docker and docker-compose.
 
 # step 1:
   - this step will creates a docker image for you
+  - cd spring-boot-elastic-search/
   - run this command: docker build -t bbnsdevelop/spring-boot-elk .
 
 # step 2:
