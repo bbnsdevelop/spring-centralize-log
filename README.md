@@ -5,7 +5,6 @@ Centralize spring boot log to ELK Elasticsearch, Logstash, Kibana
 To run this project you will need this technologies:
 Java 11
 maven 3.6.3 or currently version
-
 Docker and docker-compose.
 
 # Step 1:
@@ -24,3 +23,21 @@ Docker and docker-compose.
 # Step 4:
   - run in one new terminal this command: curl http://localhost:8080/states
   - now check your logs in http://localhost:5601/ 
+
+
+
+# SWAGGER
+
+- acess this URL: http://localhost:8080/swagger-ui.html
+
+# DOCKER
+
+- If you want to run this API in docker, you should follow this steps
+
+# step 1:
+  - this step will creates a docker image for you
+  - run this command: docker build -t bbnsdevelop/spring-boot-elk .
+
+# step 2:
+  - this step it's to run local the API
+  - docker run -d -p 8080:8080 --name spring-elk -t bbnsdevelop/spring-boot-elk
